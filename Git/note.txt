@@ -1,0 +1,14 @@
+==== Structure ====
+
+                                                -> start new feature ---> keep work on new feature -
+                                              -                                                      -
+                                            -                                                          -
+first commit ---> changes ---> more change------------> fix bug ----------------------------------------> merge
+
+
+=== Github Pages ====
+
+github.com/new
+username.github.io
+
+settings --> find github pages

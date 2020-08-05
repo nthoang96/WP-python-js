@@ -1,0 +1,52 @@
+AutoComplete Html
+====================
+<input type='text' list='datalist'>
+<datalist id='datalist'>
+<option>
+
+Css selector
+a > b
+a, b
+a b
+a:b
+a::b
+a[c=d]
+
+Responsive
+==================
+'''''''''''''''''
+- meta viewport -
+- Media Queries -
+'''''''''''''''''
+
+Bootstrap
+===================
+col-lg-3 col-sm-6
+in large display show 3 and small show 6 (total 12)
+
+
+Variables
+==============
+SCSS
+
+-- Define --
+$color:
+
+-- Using --
+ul(unordered list) {
+  font-size: 14px;
+  color: $color;
+}
+
+ol(order list) {
+  font-size: 18px;
+  color: $color;
+}
+
+remember the browser can't read scss and sass
+
+
+Css Variables
+==================
+--var: 
+var()

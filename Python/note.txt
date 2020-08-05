@@ -1,0 +1,29 @@
+============
+Data structures
+
+list - sequence of mutable value
+tuple - sequence of immutable values
+set - collection of unique values
+dict - collection of key-value pairs
+
+
+================
+Decorators
+
+def announce(f):
+  def wapper():
+    print("About to run the function ....")
+    f()
+    print("Done with the function.")
+  return wapper
+
+@announce
+def hello():
+  print("Hello, world!")
+
+hello()
+
+================
+lambda
+                        input    output
+people.sort(key=lambda people: people["name"])
