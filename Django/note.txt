@@ -8,3 +8,18 @@ python manage.py runserver
 
 --- create django appp ---
 python manage.py startapp hello
+
+set app in setting file
+set view
+set url in app
+set url in project (root url)
+
+-----
+set app_name in urls if incorrect direct the route
+
+CSRF :  Cross-Site Request Forgery
+Middleware in settings check CSRF token
+
+--- Django Session ----
+build initial database 
+python manage.py migrate
