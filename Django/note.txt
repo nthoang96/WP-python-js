@@ -1,0 +1,10 @@
+---install---
+pip3 install Django
+
+django-admin startproject name-project
+
+--run---
+python manage.py runserver
+
+--- create django appp ---
+python manage.py startapp hello
