@@ -1,0 +1,107 @@
+===========
+SQLite Types
+
+Text, Numeric, Integer, Real, Blob
+Char, varchar, smallint, int, bigint, float, double, ...
+
+================
+Create table
+
+CREATE TABLE flights (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  origin TEXT NOT NULL,
+  destination TEXT NOT NULL,
+  duration INTEGER NOT NULL
+);
+
+===
+Insert
+
+INSERT 
+  INTO flights (origin, destination, duration) 
+  VALUES ("New York", "London", 415);
+
+
+===
+Select retrieve data out of table
+
+SELECT * FROM flights // get all
+SELECT origin, destination FROM flights // show two column 
+SELECT * FROM flights WHERE id = 3; //get one row with id 3
+SELECT * FROM flights WHERE duration > 500; //get duration longer than 500
+
+SELECT * FROM flights WHERE origin IN ("New York", "Lima");
+SELECT * FROM flights WHERE origin LIKE "%a%"; //get followed by pattern
+
+Functions 
+- AVERAGE
+- COUNT 
+- MAX
+- MIN 
+- SUM
+......
+
+=======
+UPDATE data
+
+UPDATE flights 
+  SET duration = 430
+  WHERE origin = "New York"
+  AND destination = "London";
+
+====
+DELETE data
+
+DELETE FROM flights WHERE destination = "London"
+
+===
+Other Clauses
+- LIMIT
+- ORDER BY
+- GROUP BY
+- HAVING
+.....
+
+
+===
+Foreign key
+
+===
+JOIN show data
+
+SELECT first, origin, destination
+  FROM flights JOIN passengers
+  ON passengers.flight_id = flights.id
+
+JOIN / INNER JOIN
+LEFT OUTER JOIN
+RIGHT OUTER JOIN
+FULL OUTER JOIN
+
+=====
+CREATE INDEX (help quickly track)
+
+CREATE INDEX name_index ON passengers (last);
+
+===
+SQL Injection
+
+Bad:
+SELECT * FROM users
+WHERE username = username AND password = password
+Easy to hack
+
+===
+Race Condition (Lock database when we doing on it)
+
+
+======= DJANGO =====
+
+two step when change database
+
+//make migration
+python3 manage.py makemigrations
+
+//step two
+//apply migration
+python3 manage.py migrate
