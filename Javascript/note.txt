@@ -1,0 +1,34 @@
+======================
+querySelector() can select element
+ 
+========================
+const head =
+never use head equal something.
+
+
+=========================
+document.addEventListener('DOMContentLoaded', function() {
+
+});
+
+any code in this function will run when content on the page has then been loaded
+
+======
+submit
+document.querySelector('form').onsubmit 
+
+querySelector('tag')
+querySelector('#id')
+querySelector('.class')
+
+===
+html element data-<any name u want>
+
+<button data-color='red'></button>
+<button data-color='blue'></button>
+
+document.querySelectorAll().forEach(function(button) {
+  button.onclick = function() {
+    document.querySelector('#hello').style.color = button.dataset.color;
+  }
+});

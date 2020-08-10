@@ -105,3 +105,6 @@ python3 manage.py makemigrations
 //step two
 //apply migration
 python3 manage.py migrate
+
+=== To use admin site create new user
+python3 manage.py createsuperuser
