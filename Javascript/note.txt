@@ -32,3 +32,18 @@ document.querySelectorAll().forEach(function(button) {
     document.querySelector('#hello').style.color = button.dataset.color;
   }
 });
+
+====
+Events
+====
+
+=======
+Create element
+document.createElement('li');
+
+
+===
+APIs
+===
+JSON
+===
