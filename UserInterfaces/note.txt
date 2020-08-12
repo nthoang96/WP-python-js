@@ -1,0 +1,40 @@
+=========================
+Single-Page Applications
+
+window.onpopstate = function(event) {
+  console.log(event.state.section);
+}
+history.pushState
+
+Save to browser can see in url
+
+=====
+window
+
+window.innerHeight or innerWidth
+
+window.scrollY (up to down)
+
+document.body.offsetHeight
+
+=====
+animation
+====
+track when any clicked
+====
+document.addEventListener('click', event => {
+  const element = event.target;
+});
+
+can get parent of element
+==
+element.parentElement
+
+track when animation end
+==
+addEventListener('animationend')
+
+==================
+React
+
+Declarative Programming
