@@ -1,0 +1,22 @@
+-- Testing --
+assert
+
+library unittest
+
+-- Django Test -- 
+create test in tests.py
+
+Can be test with request and response of call 
+
+"response.context"
+
+---Test web browser ---
+library celeninum
+
+
+-- CI/CD --
+GitHub Action
+YAML
+
+-- Docker --
+ 
