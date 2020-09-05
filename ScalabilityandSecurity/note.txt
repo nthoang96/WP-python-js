@@ -1,0 +1,62 @@
+--- Server ---
+Cloud 
+on Premise
+
+-- Benchmarking --
+AB (Apache Benchmarking)
+Track user connect to Server
+
+-- Vertical Scaling --
+Upgrade 1 Server
+
+-- Hozinal Scaling -- 
+
+
+Load Balancer ---> Server
+              -
+                -
+                  -> Server
+
+Load Balancing Methods
+Random Choice
+Round Robin
+Fewest Connections
+
+Session-Aware Load Balancing
+Sticky Sessions
+Sessions in Database
+Client-Side Sessions
+
+-- AutoScaling --
+-- Scaling Database -- 
+-- Database Replication -- 
++ Sigle-Primary
++ Multi-Primary
+
+-- Caching -- 
++ Client-Side Caching
+Cache-Control: max-age=86400
+ETag: (version of css, js  file)
+
+-- Django Cache Framework
+Per-View Caching
+Template Fragment Caching
+Low-Level Cache API
+
+-- Security --
+Secret Key Cryptography
+
+Key and Plaintext -> Ciphertext 
+Ciphertext and Key ->  Plaintext
+
+Public-Key Cryptography
+
+Plaintext and Public Key -> Ciphertext
+Ciphertext and Private Key -> Ciphertext
+
+API Keys
+Rate Limiting
+Route Authentication
+
+Cross-Site Scripting
+Cross-Site Request Forgery  
